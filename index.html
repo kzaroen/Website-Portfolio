@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+      <script defer src="script.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+          Keiza <span>Rhoen</span>
+        </a>
+      
+        <i class="bx bx-menu" id="menu-icon"></i>
+      
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#"><img src="images/logo.png" alt="logo" class="logo-img" /></a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        
+        <button class="gradient-btn"><a href="#contact">Contact Me</a></button>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+          <h1>Heya, It's <span>Kei</span></h1>
+          <h3>a CS <span>student</span></h3>
+          <p>I'm Kei, a CS student with a heart that beats to the rhythm of code and a soul that finds expression in art.  This space is where I explore the beautiful collision of technology and creativity.  Dive into my projects or learn more about my journey below.</p>
+      
+          <div class="social-icons">
+            <a href="https://github.com/kzaroen"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/kza.roen/"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.facebook.com/cesia19/"><i class="bx bxl-facebook"></i></a>
+            <a href="https://x.com/zerohhan"><i class="bx bxl-twitter"></i></a>
+          </div>
+      
+          <div class="btn-group">
+            <a href="#about" class="btn">About</a>
+            <a href="#projects" class="btn">Projects</a>
+            
+          </div>
+        </div>
+      
+        <div class="home-img">
+          <img src="images/kei.jpg" alt="">
+        </div>
+      </section>
+      
+    <section class="about" id="about">
+        <div class="about-img">
+          <img src="images/kei.jpg" alt="">
+        </div>
+      
+        <div class="about-content">
+          <h2>About <span>Me</span></h2>
+          <p>My name is Keiza Rhoen A. Faminiano. I am a Computer Science student with a vibrant passion for the intersection of art, technology, writing, and music.  This unique blend of interests fuels my creativity and drives me to explore innovative solutions in the tech world.  As a dedicated student, I thrive on intellectual challenges and am constantly seeking to expand my knowledge and understanding of complex concepts. My active involvement in the Junior Philippines Coding Society reflects my commitment to collaborative learning and my desire to contribute to the growing tech community in the Philippines.  I approach every endeavor with a strong work ethic, a persistent spirit, and a deep belief in the power of continuous learning.  I am eager to see how my diverse interests and skills can contribute to shaping the future of technology.</p>
+          <a href="#me" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="me" id="me">
+      <h2 class="heading">Meet <span>Kei</span></h2>
+      <div class="projects-box">
+          <div class="project-card">
+              <img src="images/flute.jpg" alt="">
+              <h3>Flutist</h3>
+              <p>I’ve always seen music as a way to express what words can’t, and for me, the flute is how I speak that language. I love how it can be soft and delicate in one moment, then bright and bold in the next. Whether I’m playing a classical piece or trying out something more modern, I’m always exploring new ways to make the flute come alive. My goal is simple: to make people feel something through my music.</p>
+          </div>
+          <div class="project-card">
+              <img src="images/paint.jpg" alt="">
+              <h3>Painter</h3>
+              <p>Painting is how I slow things down and make sense of the world. I’m inspired by everyday moments—light hitting a flower just right, or the colors in a cloudy sky—and I try to capture those in my work. Whether I’m using watercolors, oils, or whatever’s on hand, I see each piece as a way to tell a story or share a feeling. I hope when people see my art, they pause, reflect, and maybe see things a little differently.</p>
+          </div>
+          <div class="project-card">
+              <img src="images/piano.jpg" alt="">
+              <h3>Pianist</h3>
+              <p>The piano has always felt like home to me. It’s where I go to think, feel, and just be. I’m drawn to how much emotion you can pack into a single piece—from calm and introspective to intense and powerful. I love playing everything from classical to my own improvised pieces, and I’m always experimenting. My goal is to take people on a little journey every time I sit down to play.</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="swiperdiv">
+            <h2 class="titleswiper"><span>Projects</span></h2>
+    
+            <div class="swiper mySwiper">
+    
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="swiper.slideToLoop(0)">
+                    <a class="swiperlink" href="clock.html">
+                        <img src="images/clock.png" alt="Clock" />
+                        <div class="slide-label">JavaScript Digital Clock</div>
+                    </a>
+                    
+                </div>
+                
+                
+                <div class="swiper-slide" onclick="swiper.slideToLoop(1)">
+                    <a class="swiperlink" href="calendar.html">
+                        <img src="images/calendar.png" alt="Calendar" />
+                        <div class="slide-label">JavaScript Digital Calendar</div>
+                    </a>
+    
+                </div>
+    
+                <div class="swiper-slide" onclick="swiper.slideToLoop(2)">
+                    <a class="swiperlink" href="calculator.html">
+                        <img src="images/calculator.png" alt="calculator" />
+                        <div class="slide-label">JavaScript Digital Calculator</div>
+                    </a>     
+                </div>            
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+      
+        <div class="container">
+          <div class="contact-info">
+            <h2>Get in touch</h2>
+            <p>I'm very approachable and would love to speak to you. Feel free to call, send me an email, follow me on social media or simply complete the enquiry form.</p>
+            <div class="info-item">
+              <span>☎</span>
+              <div>0989-326-4440</div>
+            </div>
+            <div class="info-item">
+              <span>✉</span>
+              <div>kzaroen@gmail.com</div>
+            </div>
+          </div>
+      
+          <div class="contact-form">
+            <h2>Send me a message</h2>
+            <form>
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email Address" required>
+              <input type="text" placeholder="Subject" required>
+              <textarea rows="6" placeholder="Your message" required></textarea>
+              <input type="submit" value="Send Message" class="btn">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/kzaroen"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/kza.roen/"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.facebook.com/cesia19/"><i class="bx bxl-facebook"></i></a>
+            <a href="https://x.com/zerohhan"><i class="bx bxl-twitter"></i></a>
+          </div>
+      
+        <ul class="list">
+          <li><a href="#">Home</a></li>            
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+        <div class="footer-divider"></div>
+      
+        <p class="copyright">
+          &copy; <span id="year"></span> Keiza Rhoen | All Rights Reserved
+        </p>
+      </footer>
+      
+      
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            centeredSlides: true,
+            effect: "coverflow",
+            loop: true,
+            spaceBetween: 30,
+            grabCursor: true,
+           
+    
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 50,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            }
+        });
+
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+          menuIcon.classList.toggle('bx-x');
+          navbar.classList.toggle('active');
+        };
+      
+    </script>
+  </body>
+</html>
